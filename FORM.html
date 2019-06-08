@@ -3,18 +3,59 @@
     <body>
         <h2>fill the form</h2>
 
-        <form action=""method="GET">
+        <form action=""method="GET" autocomplete="on">
             
             NAME: <input type="text" name="name" placeholder="name" value="suprith" required>
             <br>
-            EMAIL: <input type="mail" name="email" placeholder="forexample@gmail.com">
+            EMAIL: <input type="mail" name="email" placeholder="forexample@gmail.com" readonly>
             <br>
             PASSWORD: <input type="password" name="password" maxlength="5" minlength="3">
             <br>
 
-            CONTACT: <input type="number" name="number">
+            CONTACT: <input type="number" name="number"> <br>
 
-            DOB: <input type="date"  name="DOB">
+            DOB: <input type="date"  name="DOB"> <br>
+
+            <!-- check button -->
+
+            <input type="checkbox" name="gender" value="male" checked > male <br>
+            
+            <input type="checkbox" name="gender" value="female" > female <br>
+            
+            <input type="checkbox" name="gender" value="other" > other <br>
+
+
+
+                <!-- radio button -->
+            
+            <input type="radio" name="gender" value="male" checked > male <br>
+            
+            <input type="radio" name="gender" value="female" > female <br>
+            
+            <input type="radio" name="gender" value="other" > other <br>
+
+            <!-- drop down -->
+
+            <select name="Gender" id="">
+                <option value="male"> Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+<!-- 
+            <select name="Gender" multiple>
+                <option value="male"> Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select> -->
+
+             <input type="tel"
+             pattern="[0-9]{10}">
+
+            <input type="reset" value="clear" disabled> <br>
+
+
+
+         
 
 
             <input type="submit" value="submit">
@@ -22,10 +63,30 @@
 
 
 
-
-
             <!-- <form action=""method="post"> -->
         </form>
+
+       <!-- free text -->
+        <textarea  cols="30" rows="10"></textarea>
+
+
+
+         <fieldset>
+
+            <legend>mydata</legend>
+         </fieldset> <br>
+
+         <!-- color -->
+
+         <input type="color" name="my color">
+
+         <input type="url" name="my url" required>
+         <input type="submit"> <br>
+
+
+         <input type="date"> <br>
+         <input type="month"> <br>
+         <input type="date-time"> <br>
 
 
     </body>
